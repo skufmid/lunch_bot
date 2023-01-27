@@ -18,8 +18,8 @@ for num in range(5):
     thumb_url = data['thumbnailUrl']
 
     print(f'**{num+1}. {corner}**')
-    print(f'#### {name}')
+    print(f'##### {name}')
     print(side)
     # print(f'탄수화물 {carb}g  단백질 {protein}g  지방 {fat}g  나트륨 {salt}mg')
     print(f'{kcal}kcal')
-    print(f'![{name}]({thumb_url} =250)')
+    print(f'![{name}]({thumb_url} =300)')
