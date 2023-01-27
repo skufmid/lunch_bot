@@ -4,7 +4,7 @@ import datetime
 print(f'### {datetime.date.today()} 광주 캠퍼스 오늘의 점심')
 url = 'https://front.cjfreshmeal.co.kr/meal/v1/today-all-meal?storeIdx=6442'
 r = requests.get(url).json().get('data').get('2')
-for num in range(2):
+for num in range(5):
     if num: print('***')
     data = r[num]
     corner = data['corner']
