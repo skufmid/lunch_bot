@@ -46,17 +46,17 @@ def dailyMenuUpdate():
     url_hook = 'https://meeting.ssafy.com/hooks/r8st8df36jbffyiaykwrdkyjuy'
     dailyUpdateAndPost(url_hook)
 
-# if __name__ == '__main__':
-#     localtime = "14:40"
-#     schedule.every().monday.at(localtime).do(dailyMenuUpdate)
-#     schedule.every().tuesday.at(localtime).do(dailyMenuUpdate)
-#     schedule.every().wednesday.at(localtime).do(dailyMenuUpdate)
-#     schedule.every().thursday.at(localtime).do(dailyMenuUpdate)
-#     schedule.every().friday.at(localtime).do(dailyMenuUpdate)
+if __name__ == '__main__':
+    localtime = "10:40"
+    schedule.every().monday.at(localtime).do(dailyMenuUpdate)
+    schedule.every().tuesday.at(localtime).do(dailyMenuUpdate)
+    schedule.every().wednesday.at(localtime).do(dailyMenuUpdate)
+    schedule.every().thursday.at(localtime).do(dailyMenuUpdate)
+    schedule.every().friday.at(localtime).do(dailyMenuUpdate)
 
-#     while(True):
-#         schedule.run_pending()
-#         time.sleep(10)
+    while(True):
+        schedule.run_pending()
+        time.sleep(20)
 print(getRenderString(updateMenu()))
 '''
 # 가동 방법
