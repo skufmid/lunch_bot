@@ -47,7 +47,7 @@ def dailyMenuUpdate():
     dailyUpdateAndPost(url_hook)
 
 if __name__ == '__main__':
-    localtime = "11:00"
+    localtime = "02:10"
     schedule.every().monday.at(localtime).do(dailyMenuUpdate)
     schedule.every().tuesday.at(localtime).do(dailyMenuUpdate)
     schedule.every().wednesday.at(localtime).do(dailyMenuUpdate)
